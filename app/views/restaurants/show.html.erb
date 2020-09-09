@@ -3,7 +3,6 @@
     <div class="banner">
       <div class="banner-info d-flex align-items-end">
         <h1 id="banner-title"><%= @restaurant.name %></h1>
-        <p id="banner-btn"><%= link_to "Add a Review", new_restaurant_review_path(@restaurant.id), class: "btn btn-primary" %></p>
       </div>
     </div>
   </div>
@@ -24,7 +23,7 @@
   <h2 class="mt-4">Reviews 🤓</h2>
   <% @restaurant.reviews.each do |review| %>
     <li class="list-group-item">
-    <%= review.content %> <%= review.rating %>
+    <%= review.content %> <%= "⭐️" * review.rating %>
     </li>
   <% end %>
 </div>
