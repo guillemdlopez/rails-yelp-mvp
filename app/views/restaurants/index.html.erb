@@ -1,0 +1,11 @@
+
+
+<div class="container w-50">
+<h1>Restaurants</h1>
+<% @restaurants.each do |restaurant| %>
+<div class="restaurant shadow rounded-lg mb-5">
+  <img class="w-50 mr-4" src="https://source.unsplash.com/1600x900/?restaurant" alt="">
+  <%= restaurant.name %> <%= link_to "See details", restaurant_path(restaurant.id)%>
+</div>
+  <% end %>
+</div>

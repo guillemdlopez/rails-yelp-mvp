@@ -1,0 +1,51 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+button {
+  background: #61e8e3;
+  border: 0px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: rgba(0,0,0,0.8);
+}
+
+.navbar {
+  background: rgba(0,0,0,0.1);
+  display: flex;
+}
+
+.navbar {
+} p {
+  flex: grow;
+}
+
+.banner {
+  background-image: linear-gradient(90deg, rgba(2,0,22,0.3) 0%, rgba(0,0,0,0.365983893557423) 100%), url("https://source.unsplash.com/1600x900/?restaurant" );
+  position: relative;
+  margin-bottom: 10px;
+  background-position: center;
+}
+
+#banner-title {
+  color: white;
+  // position: absolute;
+  // bottom: 0px;
+  font-size: 58px;
+  margin-left: 10px;
+  padding-top: 300px;
+}
+
+#banner-btn {
+  margin-left: 20px;
+}
